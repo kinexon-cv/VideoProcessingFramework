@@ -27,10 +27,10 @@ if __name__ == "__main__":
         install_requires=["numpy==1.22.4"],
         extras_require={
             # , "PyOpenGL-accelerate" # does not compile on 3.10
-            "dev": ["pycuda", "pyopengl", "torch>1.10,<1.12", "torchvision>1.11,<1.13", "opencv-python", "onnx", "tensorrt", f"PytorchNvCodec @ file://{os.getcwd()}/src/PytorchNvCodec/"],
-            "samples": ["pycuda", "pyopengl", "torch>1.10,<1.12", "torchvision>1.11,<1.13", "opencv-python", "onnx", "tensorrt", "tqdm", PytorchNvCodec],
-            "tests": ["pycuda", "pyopengl", "torch>1.10,<1.12", "torchvision>1.11,<1.13", "opencv-python", PytorchNvCodec],
-            "torch": ["torch>1.10,<1.12", "torchvision>1.11,<1.13", PytorchNvCodec],
+            "dev": ["pycuda", "pyopengl", "torch>1.10,<1.12", "torchvision>0.11,<0.13", "opencv-python", "onnx", "tensorrt", f"PytorchNvCodec @ file://{os.getcwd()}/src/PytorchNvCodec/"],
+            "samples": ["pycuda", "pyopengl", "torch>1.10,<1.12", "torchvision>0.11,<0.13", "opencv-python", "onnx", "tensorrt", "tqdm", PytorchNvCodec],
+            "tests": ["pycuda", "pyopengl", "torch>1.10,<1.12", "torchvision>0.11,<0.13", "opencv-python", PytorchNvCodec],
+            "torch": ["torch>1.10,<1.12", "torchvision>0.11,<0.13", PytorchNvCodec],
             "tensorrt": ["torch>1.10,<1.12", "torchvision", PytorchNvCodec],
         },
         packages=["PyNvCodec"],
