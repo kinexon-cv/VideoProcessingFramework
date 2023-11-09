@@ -1,7 +1,7 @@
 [build-system]        
 requires = [
   "setuptools>=42",
-  "torch>1.10.<1.12",
+  "torch>1.10,<1.12",
   "scikit-build",
   "numpy",
   ## out-comment not install cmake/ninja via pip
