@@ -7,6 +7,6 @@ requires = [
   ## out-comment not install cmake/ninja via pip
   "cmake>=3.21",
   "ninja; platform_system!='Windows'",
-  "pkg-config",
+  "pkgconfig",
 ]
 build-backend = "setuptools.build_meta"
