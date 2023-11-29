@@ -19,7 +19,10 @@ description = """VPF stands for Video Processing Framework. It’s set of C++ li
 
 VPF also supports exporting GPU memory objects such as decoded video frames to PyTorch tensors without Host to Device copies."""
 requires-python = ">=3.7"
-license = "Apache-2.0"
+license = {
+	text: "Apache-2.0"
+	file: "LICENSE"
+}
 repository = "https://github.com/NVIDIA/VideoProcessingFramework"
 classifiers = [
     "Environment :: GPU :: NVIDIA CUDA :: 11.5",
