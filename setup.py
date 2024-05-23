@@ -17,7 +17,7 @@ except VersionConflict:
 if __name__ == "__main__":
     import skbuild
 
-    PytorchNvCodec = "PytorchNvCodec @ git+https://github.com/phausamann/VideoProcessingFramework.git@torch1.11.0+cu115#subdirectory=src/PytorchNvCodec/"
+    PytorchNvCodec = "PytorchNvCodec @ git+https://github.com/kinexon-cv/VideoProcessingFramework.git@torch1.11.0+cu115#subdirectory=src/PytorchNvCodec/"
     skbuild.setup(
         name="PyNvCodec",
         version="2.0",
