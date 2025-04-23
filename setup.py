@@ -33,6 +33,9 @@ if __name__ == "__main__":
             "torch": ["torch>1.10,<1.12", "torchvision>0.10,<0.13", PytorchNvCodec],
             "tensorrt": ["torch>1.10,<1.12", "torchvision>0.10,<0.13", PytorchNvCodec],
         },
+        dependency_links=[
+            "https://pypi.ngc.nvidia.com"
+        ],
         packages=["PyNvCodec"],
         package_data={"PyNvCodec": ["__init__.pyi"]},
         package_dir={"": "src"},
